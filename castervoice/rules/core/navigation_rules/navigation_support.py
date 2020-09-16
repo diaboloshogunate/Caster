@@ -2,10 +2,10 @@ import dragonfly
 from dragonfly import Choice
 
 DIRECTION_STANDARD = {
-    "sauce [E]": "up",
-    "dunce [E]": "down",
-    "lease [E]": "left",
-    "ross [E]": "right",
+    "north [E]": "up",
+    "south [E]": "down",
+    "west [E]": "left",
+    "east [E]": "right",
     "back": "left"
 }
 

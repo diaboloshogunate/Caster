@@ -126,7 +126,7 @@ def deal_with_phrase_not_found(selected_text, application, direction):
 def deal_with_up_down_directions(direction, number_of_lines_to_search):
     # note that zero is the default number of lines to search, so if you change that you will may want to change this
     if number_of_lines_to_search == 0 and (direction == "up" or direction == "down"):
-        # if the user says sauce (meeting up) or dunce (meaning down), set default number of lines to 3
+        # if the user says north (meeting up) or south (meaning down), set default number of lines to 3
         number_of_lines_to_search = 3
     if direction == "up":
         direction = "left"

@@ -4,9 +4,9 @@ Caster provides powerful text manipulation and navigation features. These functi
 
 ## Common elements
 
-- `direction` _sauce_ (up), _dunce_ (down), _lease_ (left) or _ross_ (right). Direction _must_ be included for all commands.
-- `number_of_lines_to_search` is an integer number of lines to search for the target object. _sauce/lease_ searches up and _dunce/ross_ searches down. _sauce/dunce_ defaults to 3 lines if omitted and _lease/ross_ defaults to searching only the current line.
-- `before_after` can be _before_ or _after_ and indicates whether the cursor should stop to the left (_before_) or the right (_after_) of the target object. Defaults for `before_after` depend on which command is being used. For the "go" commands, `before_after` defaults to whichever one is closer to the cursor. More explicitly, for "go", _ross/dunce_ defaults to _before_ and _lease/sauce_ defaults to _after_.  By contrast, for the "grab until" and "remove until" commands it defaults to the one that is farther (i.e. it selects or removes all the way through the target object). More explicitly, for "grab/remove until", _ross/dunce_ defaults to _after_ and _lease/sauce_ defaults to _before_. 
+- `direction` _north_ (up), _south_ (down), _west_ (left) or _east_ (right). Direction _must_ be included for all commands.
+- `number_of_lines_to_search` is an integer number of lines to search for the target object. _north/west_ searches up and _south/east_ searches down. _north/south_ defaults to 3 lines if omitted and _west/east_ defaults to searching only the current line.
+- `before_after` can be _before_ or _after_ and indicates whether the cursor should stop to the left (_before_) or the right (_after_) of the target object. Defaults for `before_after` depend on which command is being used. For the "go" commands, `before_after` defaults to whichever one is closer to the cursor. More explicitly, for "go", _east/south_ defaults to _before_ and _west/north_ defaults to _after_.  By contrast, for the "grab until" and "remove until" commands it defaults to the one that is farther (i.e. it selects or removes all the way through the target object). More explicitly, for "grab/remove until", _east/south_ defaults to _after_ and _west/north_ defaults to _before_. 
 - `occurrence_number` can be _first_ through _ninth_ and indicates which occurrence of the target object you want, counting from the initial position of the cursor in the direction you specify. Defaults to _first_.
 - `target_object` can be a Caster alphabet element (_arch, brov_ etc.), a Caster punctuation element (_left prekris, deckle_ etc.), a digit prefixed by _num_ (e.g. _num 6_ ), a sequence of up to three of the previous types of targets (sequences are currently only available for "go/move"), or arbitrary dictation (e.g. "punctuation element" spoken). For "go/move", if you wish to use the individual character targets in a CCR sequence with another character insertion (alphabet, punctuation, or digit) immediately following, you must terminate the command using "over" (see the examples).
 
@@ -26,39 +26,39 @@ Caster provides powerful text manipulation and navigation features. These functi
 
 **Examples**:
 
-- _go ross before deckle_
-- _go ross before deckle char_
-- _go ross before deckle char over oscar_
+- _go east before deckle_
+- _go east before deckle char_
+- _go east before deckle char over oscar_
     - Moves the cursor before ":c" then inserts "o" before the ":".
-- _go ross after second deckle_
+- _go east after second deckle_
     - Moves the cursor after the second occurrence of ":" to the right of the cursor's original position.
-- _grab sauce eight examples_
+- _grab north eight examples_
     - Searches eight lines up and selects the first occurrence of the word "examples" above the cursor.
-- _grab sauce eight until examples_
+- _grab north eight until examples_
     - Searches eight lines up and selects from the cursor to the first occurrence of the word "examples" above the cursor.
-- _grab ross hello hug quotes_
+- _grab east hello hug quotes_
     - Selects the nearest occurrence of "hello" (to the right of the cursor on the current line) and surrounds it by quotes.
     - Note that _hug quotes_ is a separate command not part of this module, but you can do this because these commands are CCR.
-- _remove sauce eight examples_
+- _remove north eight examples_
     - Searches eight lines up and deletes the first occurrence of the word "examples" above the cursor.
-- _remove sauce eight until examples_
+- _remove north eight until examples_
     - Searches eight lines up and deletes from the cursor to the first occurrence of the word "examples" above the cursor.
-- _replace lease num six with hotel_
+- _replace west num six with hotel_
     - Replaces the nearest occurrence (to the left of the cursor) of the digit "6" with the letter "h".
-- _capital dunce three second multiple_
+- _capital south three second multiple_
     - change the 2nd instance of the word "multiple" in the next 3 lines to "Multiple"
-- _capital ross lower multiple_
+- _capital east lower multiple_
     - change the next instance of the word "Multiple" to "multiple"
     
 ## Possible future features
 Please feel free to try and implement these and submit a pull request!
 
-- Supporting Caster numbers as targets (e.g. _go lease before numb one_).
-- Selecting from one element to another element rather than having to move the cursor first (e.g. _grab sauce twenty from third left prekris to second right prekris_).
-- Replacing with Caster-formatted text (e.g. _replace lease caster with gum caster_).
-- Selecting with Caster-formatted text (e.g. _grab lease tie caster_).
+- Supporting Caster numbers as targets (e.g. _go west before numb one_).
+- Selecting from one element to another element rather than having to move the cursor first (e.g. _grab north twenty from third left prekris to second right prekris_).
+- Replacing with Caster-formatted text (e.g. _replace west caster with gum caster_).
+- Selecting with Caster-formatted text (e.g. _grab west tie caster_).
 - Very powerful selection and replacement using Caster-style typing (e.g. _replace lease tie caster minus gum style ace gum typing with tie caster minus laws formatted text_).
-- Quick format switching (e.g. _switch lease [format of] very powerful to snake_).
+- Quick format switching (e.g. _switch west [format of] very powerful to snake_).
 - Limit dictation recognition to only elements that are there. Currently, the voice recognition software provides its best guess at what you mean, rather than Caster limiting the options to what is in the selection.
 - Use line numbers as location limiters (e.g. go line one fifty nine third right prekris).
 
@@ -66,10 +66,10 @@ Please feel free to try and implement these and submit a pull request!
 - Report bugs and discuss solutions [here](https://github.com/dictation-toolbox/Caster/issues/579).
 - Occasionally, the names of characters are interpreted as dictation and thus not found by the program when searching over the selected text (e.g. "arch" is interpreted as the word "arch" instead of the a). One user reported such a problem with "comma". Here are some [suggestions](https://gist.github.com/alexboche/fb3edf3a823744fb041733101331018c) on how to handle this problem, but I do not have a full understanding of the cause of the problem. There's a little bit of discussion on this in the issue page starting [here](https://github.com/dictation-toolbox/Caster/issues/579#issuecomment-517899382)
 - In some applications, the keypress speed is slow such that the cursor takes a long time to move to the desired location (seems to be application dependent). In the background, Caster is just using the left and right keys to move the cursor around after the initial selection. In principle, we could improve this by using the up/down arrows and navigating using Ctrl-left/right.
-- Currently, using _sauce/dunce_ includes the current line in the search (it shouldn't) and _lease/ross_ allows the user to specify a number of lines to search over (it should only search the current line). To fix this, we would need to adjust the regex for the case when _sauce/dunce_ is specified so that it only matches when it sees a new line character before (for _dunce_) or after (for _sauce_) the target object. The regex is located in the function `select_text_and_return_it` in the file `text_manipulation_support.py`.
+- Currently, using _north/south_ includes the current line in the search (it shouldn't) and _west/east_ allows the user to specify a number of lines to search over (it should only search the current line). To fix this, we would need to adjust the regex for the case when _north/south_ is specified so that it only matches when it sees a new line character before (for _south_) or after (for _north_) the target object. The regex is located in the function `select_text_and_return_it` in the file `text_manipulation_support.py`.
 - Words within a multiword camel case phrase will be ignored, the regex (see above) needs to be adjusted to fix this. 
 - In some situations (possibly only when selecting towards the left), if you have two of the same word directly in a row, the regex not match the nearest occurrence but rather start by matching the second nearest one. The regex (see above) needs to be adjusted to fix this (I don't know how).
-- Occasionally the command parameters (e.g. `occurrence_number` or `before_after`) are interpreted as dictation since the parameters are optional. For example, if you say "go ross after hello", once in a while it will think you are searching for the phrase "after hello" and so won't work in which case it would print in the Natlink window "'after hello' not found". I don't understand what determines when this happens and when it doesn't.
+- Occasionally the command parameters (e.g. `occurrence_number` or `before_after`) are interpreted as dictation since the parameters are optional. For example, if you say "go east after hello", once in a while it will think you are searching for the phrase "after hello" and so won't work in which case it would print in the Natlink window "'after hello' not found". I don't understand what determines when this happens and when it doesn't.
 - There is some duplication in the code. It would be great if a python expert was able to help us tidy the code up a bit.
 - These commands are unreliable in Microsoft Word. You will want to [disable smart selection](https://superuser.com/questions/962710/how-to-make-microsoft-word-selection-behave-like-it-would-in-a-plain-text-editor) and [cursor animation](https://www.404techsupport.com/2012/11/07/disable-cursor-animation-word-2013/) for use there. You can also try adjusting the pause times (see below). However, you are probably better off using Dragon's native commands in Microsoft Word. Those commands have some advantages and disadvantages relative to Caster's.
 - In RStudio, the underlying Ace text editor automatically navigates through double spaces with a single arrow key press. This feature causes these functions to fail. An RStudio [issue](https://github.com/rstudio/rstudio/issues/4934) is open.

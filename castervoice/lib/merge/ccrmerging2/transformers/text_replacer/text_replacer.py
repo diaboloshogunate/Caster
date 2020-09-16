@@ -90,9 +90,9 @@ def _spec_override_from_config(rule, definitions):
             choices_dict_copy = extra._choices.copy()  # operate on this copy of the choices dict
             choices_dict_copy_keys = set(choices_dict_copy.keys())
             replaced_a_choice_key = False
-            for choices_key in choices_dict_copy_keys:  # ex: "dunce make" = key, something else = value
-                for replaceable_text in definitions.extras.keys():  # ex: "dunce" is key, "down" is the value
-                    if replaceable_text in choices_key:  # ex: "dunce" is in "dunce make"
+            for choices_key in choices_dict_copy_keys:  # ex: "south make" = key, something else = value
+                for replaceable_text in definitions.extras.keys():  # ex: "south" is key, "down" is the value
+                    if replaceable_text in choices_key:  # ex: "south" is in "south make"
                         replaced_a_choice_key = True
                         value = choices_dict_copy[choices_key]
                         del choices_dict_copy[choices_key]

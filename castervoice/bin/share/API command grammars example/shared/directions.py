@@ -2,9 +2,9 @@
 # __author__ = "lexxish"
 #
 
-RIGHT = "(right|sauce)"
-LEFT = "(left|lease)"
-UP = "(up|sauce)"
-DOWN = "(down|dunce)"
+RIGHT = "(right|north)"
+LEFT = "(left|west)"
+UP = "(up|north)"
+DOWN = "(down|south)"
 FORWARD = "(%s|next|forward)" % RIGHT
 BACK = "(%s|back|prev|prior|previous)" % LEFT

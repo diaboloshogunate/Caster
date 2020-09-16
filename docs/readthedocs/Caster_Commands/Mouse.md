@@ -21,18 +21,18 @@ A video demonstration of mouse commands is found [here](https://youtu.be/UISjQBM
 ### Moving
 
 - Move around: `curse <direction> [[E] <direction>] <distance_in_pixel>`  
-    - `<direction>` can be _sauce_ (up), _dunce_ (down), _lease_ (left), or _ross_ (right).
+    - `<direction>` can be _north_ (up), _south_ (down), _west_ (left), or _east_ (right).
 - Scroll mouse wheel: `scree <direction> [number_of_scrolls]`
-    - `<direction>` can be _sauce_ (up) or _dunce_ (down).
+    - `<direction>` can be _north_ (up) or _south_ (down).
 - Scroll mouse wheel continuously (until you say `cancel`): `zinc <direction> <scroll speed>`
-    - `<direction>` can be _sauce_ (up) or _dunce_ (down).
+    - `<direction>` can be _north_ (up) or _south_ (down).
     - `<scroll speed>` can be _super slow_, _slow_, _normal_, or _supefast_
 
 **Examples**:
 
-- _curse sauce ten_
-- _curse lease sauce ten_
-- _curse lease-e-sauce ten_ 
+- _curse north ten_
+- _curse west north ten_
+- _curse west-e-north ten_ 
     - Easier to speak than the previous example.
 
 ## Advanced mouse commands
@@ -74,7 +74,7 @@ Selecting from one point to another is available including fine adjustment of th
 - _5 by 20 kick_
 - _5 by 20 select 10 by 30_
 - _5 by 20 select 10_
-- _5 by 20 move, curse sauce lease 5, squat, 10 by 30 move, curse dunce lease 10, bench_
+- _5 by 20 move, curse north west 5, squat, 10 by 30 move, curse south west 10, bench_
 
 ### Rainbow
 
@@ -101,7 +101,7 @@ Selecting from one point to another is available including fine adjustment of th
     - References square within the second red palette.
 - _red 86 select 2 green 10_
     - Selects from the first red 86 to the second green 10.
-- _red 86 move, curse sauce lease 5, squat, 2 green 10 move, curse dunce lease 10, bench_
+- _red 86 move, curse north west 5, squat, 2 green 10 move, curse south west 10, bench_
     - Selects from the first red 86 to the second green 10 with fine adjustment.
 
 ### Sudoku
@@ -124,7 +124,7 @@ Creates a grid of numbered 3 x 3 squares over the whole screen. A number is call
 - _95 kick double_
 - _drag 201_
 - _7 drag 13_
-- _55 move, curse sauce lease 5, squat, 20 grid 7 move, curse dunce lease 10, bench_
+- _55 move, curse north west 5, squat, 20 grid 7 move, curse south west 10, bench_
 
 ### Legion
 

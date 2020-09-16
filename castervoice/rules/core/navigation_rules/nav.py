@@ -156,13 +156,13 @@ class Navigation(MergeRule):
         # keystroke commands
         "<direction> [<nnavi500>]":
             R(Key("%(direction)s")*Repeat(extra='nnavi500'), rdescript="arrow keys"),
-        "(lease wally | latch) [<nnavi10>]":
+        "(west wally | latch) [<nnavi10>]":
             R(Key("home:%(nnavi10)s")),
-        "(ross wally | ratch) [<nnavi10>]":
+        "(east wally | ratch) [<nnavi10>]":
             R(Key("end:%(nnavi10)s")),
-        "sauce wally [<nnavi10>]":
+        "north wally [<nnavi10>]":
             R(Key("c-home:%(nnavi10)s")),
-        "dunce wally [<nnavi10>]":
+        "south wally [<nnavi10>]":
             R(Key("c-end:%(nnavi10)s")),
         "bird [<nnavi500>]":
             R(Key("c-left:%(nnavi500)s")),
@@ -203,12 +203,12 @@ class Navigation(MergeRule):
         "(delete|deli)": "del",
         "(escape | cancel)": "escape",
         "(enter | shock)": "enter",
-        "(left | lease)": "left",
-        "(right | ross)": "right",
-        "(up | sauce)": "up",
-        "(down | dunce)": "down",
-        "page (down | dunce)": "pgdown",
-        "page (up | sauce)": "pgup",
+        "(left | west)": "left",
+        "(right | east)": "right",
+        "(up | north)": "up",
+        "(down | south)": "down",
+        "page (down | south)": "pgdown",
+        "page (up | north)": "pgup",
         "space": "space"
     }
     button_dictionary_10 = {
@@ -228,8 +228,8 @@ class Navigation(MergeRule):
     }
     button_dictionary_10.update(longhand_punctuation_names)
     button_dictionary_1 = {
-        "(home | lease wally | latch)": "home",
-        "(end | ross wally | ratch)": "end",
+        "(home | west wally | latch)": "home",
+        "(end | east wally | ratch)": "end",
         "insert": "insert",
         "zero": "0",
         "one": "1",
@@ -273,10 +273,10 @@ class Navigation(MergeRule):
         Dictation("textnv"),
         Choice("enclosure", _dtpd),
         Choice("direction", {
-            "dunce": "down",
-            "sauce": "up",
-            "lease": "left",
-            "ross": "right",
+            "south": "down",
+            "north": "up",
+            "west": "left",
+            "east": "right",
         }),
         modifier_choice_object,
         Choice("button_dictionary_1", button_dictionary_1),
@@ -326,8 +326,8 @@ class Navigation(MergeRule):
             "big": True,
         }),
         Choice("splatdir", {
-            "lease": "backspace",
-            "ross": "delete",
+            "west": "backspace",
+            "east": "delete",
         }),
     ]
 

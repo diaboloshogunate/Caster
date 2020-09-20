@@ -28,14 +28,14 @@ There are two ways to get around this:
 
    ```
    <<<SPEC>>>
-   shock -> earthquake
+   slap -> earthquake
    <<<NOT_SPECS>>>
    north -> up
    south -> down
    west -> left
    east -> right
    ```
-   ​	This `words.txt` will create a rule filter which goes through **all** Caster rules at boot time and replaces the word "shock" in any spec with the word "earthquake". It will also replace "north", "south" , "west" and "east"  with "up", "down", "left", and "right" in extras and defaults in any rule. The triple-angle-brackets indicate mode changes.  The default mode is `<<<ANY>>>`.
+   ​	This `words.txt` will create a rule filter which goes through **all** Caster rules at boot time and replaces the word "slap" in any spec with the word "earthquake". It will also replace "north", "south" , "west" and "east"  with "up", "down", "left", and "right" in extras and defaults in any rule. The triple-angle-brackets indicate mode changes.  The default mode is `<<<ANY>>>`.
 
    Valid modes are: 
 

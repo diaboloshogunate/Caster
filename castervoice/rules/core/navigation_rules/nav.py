@@ -82,8 +82,8 @@ class Navigation(MergeRule):
         # keyboard shortcuts
         'save':
             R(Key("c-s"), rspec="save"),
-        'shock [<nnavi50>]':
-            R(Key("enter"), rspec="shock")*Repeat(extra="nnavi50"),
+        'slap [<nnavi50>]':
+            R(Key("enter"), rspec="slap")*Repeat(extra="nnavi50"),
         # "(<mtn_dir> | <mtn_mode> [<mtn_dir>]) [(<nnavi500> | <extreme>)]":
         #     R(Function(text_utils.master_text_nav)), # this is now implemented below
         "shift click":
@@ -202,7 +202,7 @@ class Navigation(MergeRule):
         "(backspace | clear)": "backspace",
         "(delete|deli)": "del",
         "(escape | cancel)": "escape",
-        "(enter | shock)": "enter",
+        "(enter | slap)": "enter",
         "(left | west)": "left",
         "(right | east)": "right",
         "(up | north)": "up",

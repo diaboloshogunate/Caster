@@ -11,13 +11,13 @@ class TestTRParser(TestCase):
         """
         parser = TRParser()
         lines = ["<<<ANY>>>",
-                 "shock -> earthquake"]
+                 "slap -> earthquake"]
         definitions = parser._parse_lines(lines)
-        self.assertEqual(definitions.specs["shock"], "earthquake")
+        self.assertEqual(definitions.specs["slap"], "earthquake")
         self.assertEqual(1, len(definitions.specs))
-        self.assertEqual(definitions.extras["shock"], "earthquake")
+        self.assertEqual(definitions.extras["slap"], "earthquake")
         self.assertEqual(1, len(definitions.extras))
-        self.assertEqual(definitions.defaults["shock"], "earthquake")
+        self.assertEqual(definitions.defaults["slap"], "earthquake")
         self.assertEqual(1, len(definitions.defaults))
 
     def test_parse_lines_comments(self):
@@ -27,9 +27,9 @@ class TestTRParser(TestCase):
         parser = TRParser()
         lines = ["<<<SPEC>>>",
                  "#this line -> doesn't get in",
-                 "shock -> earthquake # but this line does"]
+                 "slap -> earthquake # but this line does"]
         definitions = parser._parse_lines(lines)
-        self.assertEqual(definitions.specs["shock"], "earthquake")
+        self.assertEqual(definitions.specs["slap"], "earthquake")
         self.assertEqual(1, len(definitions.specs))
 
     def test_parse_lines(self):
@@ -38,14 +38,14 @@ class TestTRParser(TestCase):
         """
         parser = TRParser()
         lines = ["<<<SPEC>>>",
-                 "shock -> earthquake",
+                 "slap -> earthquake",
                  "<<<EXTRA>>>",
                  " ",  # blank lines should not cause problems
                  "goof -> gas",
                  "<<<DEFAULT>>>",
                  "some -> none"]
         definitions = parser._parse_lines(lines)
-        self.assertEqual(definitions.specs["shock"], "earthquake")
+        self.assertEqual(definitions.specs["slap"], "earthquake")
         self.assertEqual(1, len(definitions.specs))
         self.assertEqual(definitions.extras["goof"], "gas")
         self.assertEqual(1, len(definitions.extras))

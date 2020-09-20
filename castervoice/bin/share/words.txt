@@ -1,5 +1,5 @@
 <<<SPEC>>>
-shock -> earthquake
+slap -> earthquake
 <<<NOT_SPECS>>>
 north -> up
 south -> down

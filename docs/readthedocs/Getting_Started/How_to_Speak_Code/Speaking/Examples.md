@@ -14,7 +14,7 @@ function setStatusText(text) {
 ```
 
 **Function definition:**
-_"set format camel gum bow; format function, ace, format set status text, prekris, format text, east wally, ace, curly, shock"_
+_"set format camel gum bow; format function, ace, format set status text, prekris, format text, east wally, ace, curly, slap"_
 
 **Variable assignment:**
 _"format var, ace, format icon, ace equals ace, dolly, prekris, thin quotes, dot, spine bow session extender connection status, ace greater than ace, arch, dot, format dropdown toggle, tau doc"_

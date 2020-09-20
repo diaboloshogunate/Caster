@@ -1,7 +1,7 @@
 '''
 Created on 18 Mar 2018
 
-@author: gerrish
+@author: camel
 '''
 from dragonfly import Function, Choice
 

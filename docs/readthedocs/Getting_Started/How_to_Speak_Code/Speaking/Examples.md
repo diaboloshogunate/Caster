@@ -14,18 +14,18 @@ function setStatusText(text) {
 ```
 
 **Function definition:**
-_"set format gerrish gum bow; format function, ace, format set status text, prekris, format text, east wally, ace, curly, shock"_
+_"set format camel gum bow; format function, ace, format set status text, prekris, format text, east wally, ace, curly, shock"_
 
 **Variable assignment:**
 _"format var, ace, format icon, ace equals ace, dolly, prekris, thin quotes, dot, spine bow session extender connection status, ace greater than ace, arch, dot, format dropdown toggle, tau doc"_
 
 **Setting the title attribute:**
-_"laws gum bow icon dot, arch tango tango romeo, prekris, curly, ace two, west, thin quotes, format title, east, deckle, ace, format text, east wally, semper, save"_
+_"whisper gum bow icon dot, arch tango tango romeo, prekris, curly, ace two, west, thin quotes, format title, east, deckle, ace, format text, east wally, semper, save"_
 
 Alternately, one could use snippets/templates to make some of this easier/faster. For example, the following
 would create the same function definition using a code snippet in Sublime Text.
 
-_"set format gerrish gum bow; format fun, tabby, format set status text, tabby, format text, tabby"_
+_"set format camel gum bow; format fun, tabby, format set status text, tabby, format text, tabby"_
 
 The rest of the dictation after the function definition would be the same. This is a savings of five words, or about 25%, for the function definition. Creating specific snippets for things like variable declarations and assignments, jQuery selectors, etc. could reduce this further.
 
@@ -41,10 +41,10 @@ If you tried saying "format var, ace, format format pattern", Dragon would outpu
 
 To get around this, use the "terminal format" command. To dictate the above, I would say something similar to the following:
 
-_"gerrish gum bow var, ace, terminal format format pattern; ace equals ace, quotes, laws bow some pattern, east wally semper"_
+_"camel gum bow var, ace, terminal format format pattern; ace equals ace, quotes, whisper bow some pattern, east wally semper"_
 
 This is something that I only run into occasionally in my day-to-day use of Caster. But because these examples consist almost entirely of Caster CCR commands, I've been making extensive use of the "terminal format" command while preparing them. :)
 
-Note that this works with any of the formatting commands. For example, you can say "terminal gerrish gum bow", "terminal tie spine bow", or "terminal snake bow". However, I usually find it difficult, both cognitively and verbally, to string that many words together into a command without messing something up. To make it easier, I will usually explicitly set the format I want to work with by using the "set format" command, and then simply saying "terminal format". For example: "set format Gerrish gum bow; terminal format some stuff".
+Note that this works with any of the formatting commands. For example, you can say "terminal camel gum bow", "terminal stud spine bow", or "terminal snake bow". However, I usually find it difficult, both cognitively and verbally, to string that many words together into a command without messing something up. To make it easier, I will usually explicitly set the format I want to work with by using the "set format" command, and then simply saying "terminal format". For example: "set format camel gum bow; terminal format some stuff".
 
 Sources [Chilimangoes's Examples Gist](https://gist.github.com/chilimangoes/f6ae51ca53d96a19a46c45ecd4b0d296)

@@ -56,8 +56,8 @@ Please feel free to try and implement these and submit a pull request!
 - Supporting Caster numbers as targets (e.g. _go west before numb one_).
 - Selecting from one element to another element rather than having to move the cursor first (e.g. _grab north twenty from third left prekris to second right prekris_).
 - Replacing with Caster-formatted text (e.g. _replace west caster with gum caster_).
-- Selecting with Caster-formatted text (e.g. _grab west tie caster_).
-- Very powerful selection and replacement using Caster-style typing (e.g. _replace lease tie caster minus gum style ace gum typing with tie caster minus laws formatted text_).
+- Selecting with Caster-formatted text (e.g. _grab west stud caster_).
+- Very powerful selection and replacement using Caster-style typing (e.g. _replace lease stud caster minus gum style ace gum typing with stud caster minus whisper formatted text_).
 - Quick format switching (e.g. _switch west [format of] very powerful to snake_).
 - Limit dictation recognition to only elements that are there. Currently, the voice recognition software provides its best guess at what you mean, rather than Caster limiting the options to what is in the selection.
 - Use line numbers as location limiters (e.g. go line one fifty nine third right prekris).

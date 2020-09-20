@@ -12,12 +12,12 @@ Say `Enable <hook name> ` activate a hook.
 
    Example command
 
-   ` set format tie snake bow` 
+   ` set format stud snake bow` 
 
    Example Legend
 
    - snake - words_with_underscores
-   - tie - TitleCase
+   - stud - TitleCase
 
    
 

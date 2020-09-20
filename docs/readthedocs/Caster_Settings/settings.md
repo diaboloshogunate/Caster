@@ -55,14 +55,14 @@ text_format = [3, 1]
 
 #    Commands for capitalization:
 #    1 yell - ALLCAPS
-#    2 tie - TitleCase
-#    3 Gerrish - camelCase
+#    2 stud - TitleCase
+#    3 camel - camelCase
 #    4 sing - Sentencecase
-#    5 laws (default) - alllower
+#    5 whisper (default) - alllower
 
 #   Commands for word spacing:
-#    0 (default except Gerrish) - words with spaces
-#    1 gum (default for Gerrish)  - wordstogether
+#    0 (default except camel) - words with spaces
+#    1 gum (default for camel)  - wordstogether
 #    2 spine - words-with-hyphens
 #    3 snake - words_with_underscores
 #    4 pebble - words.with.fullstops

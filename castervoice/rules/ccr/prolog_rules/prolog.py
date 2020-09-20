@@ -1,7 +1,7 @@
 '''
 Created on Sep 2, 2015
 
-@author: Gerrish
+@author: camel
 '''
 
 from castervoice.lib.actions import Text

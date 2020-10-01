@@ -217,7 +217,7 @@ whiskey \\ x-ray \\ yankee \\ zulu \\
 \command{queue \footnotemark[1] \footnotemark[2]}{ctrl - shift - <dir>}
 \command{fly \footnotemark[1] \footnotemark[2]}{ctrl - <dir>}
 \command{splat \footnotemark[1] \footnotemark[2]}{ctrl - del/bkspc}
-\command{\footnotemark[1] wally}{home/end}
+\command{\footnotemark[1] wind}{home/end}
 \command{tell sink}{end + enter}
 \command{tell dock}{end + semicolon + enter}
 \command{kraken}{ctrl + space}
@@ -232,15 +232,15 @@ whiskey \\ x-ray \\ yankee \\ zulu \\
 
 \sectiontitle{Copy and Paste}
 
-\command{stoosh \footnotemark[3]}{copy}
+\command{cop \footnotemark[3]}{copy}
 \command{cut \footnotemark[3]}{cut}
-\command{spark \footnotemark[3] \footnotemark[6]}{paste}
-\command{garb \footnotemark[3]}{double-click + copy}
+\command{paste \footnotemark[3] \footnotemark[6]}{paste}
+\command{grab \footnotemark[3]}{double-click + copy}
 \command{drop \footnotemark[3]}{double-click + paste}
 \command{duple \footnotemark[2]}{duplicate line}
 
 \footnotetext[3]{Takes optional number parameter, which is used to determine a persistent clipboard slot}
-\footnotetext[6]{Takes optional formatting parameters, e.g. "spark tie"}
+\footnotetext[6]{Takes optional formatting parameters, e.g. "paste tie"}
 %---------------------------------------------------------------------------------
 \end{minipage} % End the second column of text
 } % End the second division of the page
@@ -454,15 +454,15 @@ value false \\
 \sectiontitle{Example command chains}
 
 \examplecommand{shackle clear}{Select and delete the current line}
-\examplecommand{queue west stoosh three}{Store the previous word/variable name in position three}
+\examplecommand{queue west cop three}{Store the previous word/variable name in position three}
 \examplecommand{queue west three hug brax}{Enclose the previous three elements in square brackets}
-\examplecommand{shackle cut south four spark}{Cut the current line, move down four, paste}
-\examplecommand{shin east wally clear}{Select to the end of the line, delete}
-\examplecommand{east wally clear four}{Go to the end of the line, backspace four}
+\examplecommand{shackle cut south four paste}{Cut the current line, move down four, paste}
+\examplecommand{shin east wind clear}{Select to the end of the line, delete}
+\examplecommand{east wind clear four}{Go to the end of the line, backspace four}
 \examplecommand{snake variable name}{variable\_name}
 \examplecommand{curly quotes arch east deckle quotes brov}{\{"a":"b"\}}
 \examplecommand{backslash format command curly}{\textbackslash command\{\}}
-\examplecommand{(python) tell sink print to console spark three}{new line, print(<third clipboard position>)}
+\examplecommand{(python) tell sink print to console paste three}{new line, print(<third clipboard position>)}
 %----------------------------------------------------------------------------------------
 \end{minipage}
 }

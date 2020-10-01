@@ -33,7 +33,7 @@ class fmanRule(MappingRule):
         "sort [by] name": R(Key("c-f1")),
         "sort [by] size": R(Key("c-f2")),
         "sort [by] (modified | date)": R(Key("c-f3")),
-        "(stoosh | copy) path": R(Key("f11")),
+        "(cop | copy) path": R(Key("f11")),
         "terminal": R(Key("f9")),
         "command pallette": R(Key("cs-p")),
     }

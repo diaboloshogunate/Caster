@@ -31,8 +31,8 @@ class TyporaRule(MappingRule):
         "select [cell | scope]": R(Key("c-e")),
         "[select] word <n>": R(Key("c-d"))*Repeat(extra="n"),
         "delete word <n>": R(Key("cs-d"))*Repeat(extra="n"),
-        # "jump [to] top":    R(Key("c-home")), # Caster: "north wally"
-        # "jump [to] selection":  R(Key("c-j")), # Caster: "south wally"
+        # "jump [to] top":    R(Key("c-home")), # Caster: "north wind"
+        # "jump [to] selection":  R(Key("c-j")), # Caster: "south wind"
         "jump [to] buttom": R(Key("c-end")),
         "find":  # Say "escape" to exit the find/replace context
             R(Key("c-f")),

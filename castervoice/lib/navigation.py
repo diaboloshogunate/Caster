@@ -115,7 +115,7 @@ def _text_to_clipboard(keystroke, nnavi500):
         cb.copy_to_system()
 
 
-def stoosh_keep_clipboard(nnavi500):
+def cop_keep_clipboard(nnavi500):
     _text_to_clipboard("c-c", nnavi500)
 
 
@@ -124,7 +124,7 @@ def cut_keep_clipboard(nnavi500):
 
 
 def drop_keep_clipboard(nnavi500, capitalization, spacing):
-    # Maintain standard spark functionality for non-strings
+    # Maintain standard paste functionality for non-strings
     if capitalization == 0 and spacing == 0 and nnavi500 == 1:
         Key("c-v").execute()
         return

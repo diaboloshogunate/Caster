@@ -14,13 +14,13 @@ function setStatusText(text) {
 ```
 
 **Function definition:**
-_"set format camel gum bow; format function, ace, format set status text, prekris, format text, east wally, ace, curly, slap"_
+_"set format camel gum bow; format function, ace, format set status text, prekris, format text, east wind, ace, curly, slap"_
 
 **Variable assignment:**
 _"format var, ace, format icon, ace equals ace, dolly, prekris, thin quotes, dot, spine bow session extender connection status, ace greater than ace, arch, dot, format dropdown toggle, tau doc"_
 
 **Setting the title attribute:**
-_"whisper gum bow icon dot, arch tango tango romeo, prekris, curly, ace two, west, thin quotes, format title, east, deckle, ace, format text, east wally, semper, save"_
+_"whisper gum bow icon dot, arch tango tango romeo, prekris, curly, ace two, west, thin quotes, format title, east, deckle, ace, format text, east wind, semper, save"_
 
 Alternately, one could use snippets/templates to make some of this easier/faster. For example, the following
 would create the same function definition using a code snippet in Sublime Text.
@@ -41,7 +41,7 @@ If you tried saying "format var, ace, format format pattern", Dragon would outpu
 
 To get around this, use the "terminal format" command. To dictate the above, I would say something similar to the following:
 
-_"camel gum bow var, ace, terminal format format pattern; ace equals ace, quotes, whisper bow some pattern, east wally semper"_
+_"camel gum bow var, ace, terminal format format pattern; ace equals ace, quotes, whisper bow some pattern, east wind semper"_
 
 This is something that I only run into occasionally in my day-to-day use of Caster. But because these examples consist almost entirely of Caster CCR commands, I've been making extensive use of the "terminal format" command while preparing them. :)
 

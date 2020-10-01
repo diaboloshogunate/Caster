@@ -318,7 +318,7 @@ Same Commands as [Git Bash](#git-bash)
 | `open right`      | `properties`                  | `refresh`        |
 | `rename`          | `search`                      | `set favourite`  |
 | `show favourites` | `(show / hide) hidden`        | `sort [by] name` |
-| `sort [by] size`  | `sort [by] (modified / date)` | `stoosh path`    |
+| `sort [by] size`  | `sort [by] (modified / date)` | `cop path`    |
 | `terminal`        | `command pallette`            | `tabby`          |
 
 # Foxit Reader

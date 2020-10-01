@@ -88,12 +88,12 @@ class Navigation(MergeRule):
         #     R(Function(text_utils.master_text_nav)), # this is now implemented below
         "shift click":
             R(Key("shift:down") + Mouse("left") + Key("shift:up")),
-        "stoosh [<nnavi500>]":
-            R(Function(navigation.stoosh_keep_clipboard), rspec="stoosh"),
+        "cop [<nnavi500>]":
+            R(Function(navigation.cop_keep_clipboard), rspec="cop"),
         "cut [<nnavi500>]":
             R(Function(navigation.cut_keep_clipboard), rspec="cut"),
-        "spark [<nnavi500>] [(<capitalization> <spacing> | <capitalization> | <spacing>) [(bow|bowel)]]":
-            R(Function(navigation.drop_keep_clipboard), rspec="spark"),
+        "paste [<nnavi500>] [(<capitalization> <spacing> | <capitalization> | <spacing>) [(bow|bowel)]]":
+            R(Function(navigation.drop_keep_clipboard), rspec="paste"),
         "splat [<splatdir>] [<nnavi10>]":
             R(Key("c-%(splatdir)s"), rspec="splat")*Repeat(extra="nnavi10"),
         "deli [<nnavi50>]":
@@ -156,13 +156,13 @@ class Navigation(MergeRule):
         # keystroke commands
         "<direction> [<nnavi500>]":
             R(Key("%(direction)s")*Repeat(extra='nnavi500'), rdescript="arrow keys"),
-        "(west wally | latch) [<nnavi10>]":
+        "(west wind | latch) [<nnavi10>]":
             R(Key("home:%(nnavi10)s")),
-        "(east wally | ratch) [<nnavi10>]":
+        "(east wind | ratch) [<nnavi10>]":
             R(Key("end:%(nnavi10)s")),
-        "north wally [<nnavi10>]":
+        "north wind [<nnavi10>]":
             R(Key("c-home:%(nnavi10)s")),
-        "south wally [<nnavi10>]":
+        "south wind [<nnavi10>]":
             R(Key("c-end:%(nnavi10)s")),
         "bird [<nnavi500>]":
             R(Key("c-left:%(nnavi500)s")),
@@ -228,8 +228,8 @@ class Navigation(MergeRule):
     }
     button_dictionary_10.update(longhand_punctuation_names)
     button_dictionary_1 = {
-        "(home | west wally | latch)": "home",
-        "(end | east wally | ratch)": "end",
+        "(home | west wind | latch)": "home",
+        "(end | east wind | ratch)": "end",
         "insert": "insert",
         "zero": "0",
         "one": "1",
@@ -320,7 +320,7 @@ class Navigation(MergeRule):
             "fly": "c",
         }),
         Choice("extreme", {
-            "Wally": "way",
+            "wind": "way",
         }),
         Choice("big", {
             "big": True,

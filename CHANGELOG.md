@@ -49,7 +49,7 @@
 - Sets user directory with Permissions check with fallback location [\#673](https://github.com/dictation-toolbox/Caster/pull/673) ([LexiconCode](https://github.com/LexiconCode))
 - Allow Unicode characters in history [\#671](https://github.com/dictation-toolbox/Caster/pull/671) ([comodoro](https://github.com/comodoro))
 - Added Clipboard read\write retry attempts on failure [\#665](https://github.com/dictation-toolbox/Caster/pull/665) ([LexiconCode](https://github.com/LexiconCode))
-- add back north/south wally [\#662](https://github.com/dictation-toolbox/Caster/pull/662) ([alexboche](https://github.com/alexboche))
+- add back north/south wind [\#662](https://github.com/dictation-toolbox/Caster/pull/662) ([alexboche](https://github.com/alexboche))
 - Add refresh method to mock ChainAlias and use test discovery on Travis [\#661](https://github.com/dictation-toolbox/Caster/pull/661) ([comodoro](https://github.com/comodoro))
 - Import from lib.imports in browser grammars [\#654](https://github.com/dictation-toolbox/Caster/pull/654) ([brxck](https://github.com/brxck))
 - Changed output of Retrieve\(\) from Text to dragonfly Paste action [\#652](https://github.com/dictation-toolbox/Caster/pull/652) ([LexiconCode](https://github.com/LexiconCode))
